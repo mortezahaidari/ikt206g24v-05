@@ -1,0 +1,1 @@
+{"type":"http-01","url":"https://acme.zerossl.com/v2/DV90/chall/MBufoKf3G_ymrZ7CzLGGag","status":"processing","token":"6QuWdSBehBEbszuLNhMzSc6SJ8dWAOA-GDaiXbySkFQ","keyAuthorization":"6QuWdSBehBEbszuLNhMzSc6SJ8dWAOA-GDaiXbySkFQ.n1_LWqjTta46jhhsCgfmKAagDVq7B6zaXSfuAo0Z1uA","identifier":{"type":"dns","value":"haidari.top"}}

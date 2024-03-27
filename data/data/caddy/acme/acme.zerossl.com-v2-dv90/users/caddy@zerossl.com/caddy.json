@@ -1,0 +1,14 @@
+{
+	"status": "valid",
+	"contact": [
+		"mailto:caddy@zerossl.com"
+	],
+	"termsOfServiceAgreed": true,
+	"externalAccountBinding": {
+		"protected": "eyJhbGciOiJIUzI1NiIsImtpZCI6InVsZ1o5ZFAtdXVwTnZ3VDZGVzBtdWciLCJ1cmwiOiJodHRwczovL2FjbWUuemVyb3NzbC5jb20vdjIvRFY5MC9uZXdBY2NvdW50In0",
+		"payload": "eyJjcnYiOiJQLTI1NiIsImt0eSI6IkVDIiwieCI6IkhUbGl4QXVPeV8ySlE3bVBfaE4zcng4LXJ6dkFpNGt6X3pZMEJ6UTBsNlkiLCJ5IjoiXzhwUlk1N21JUTVyU0VfRGpuNHhTcFRfWkxDaXV3ZkI3TjlZSFo0SDJzNCJ9",
+		"signature": "bwNVrq8hnUfgcEyxPyqiPyh_wGesAO7gYCt-2jGCvtQ"
+	},
+	"orders": "https://acme.zerossl.com/v2/DV90/account/ulgZ9dP-uupNvwT6FW0mug/orders",
+	"location": "https://acme.zerossl.com/v2/DV90/account/ulgZ9dP-uupNvwT6FW0mug"
+}

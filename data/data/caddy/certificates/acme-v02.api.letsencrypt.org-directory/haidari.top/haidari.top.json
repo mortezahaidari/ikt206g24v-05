@@ -1,0 +1,9 @@
+{
+	"sans": [
+		"haidari.top"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/037dcaa566093efc680bcaf8281ee9781c65",
+		"ca": "https://acme-v02.api.letsencrypt.org/directory"
+	}
+}

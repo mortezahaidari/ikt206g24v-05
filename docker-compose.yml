@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=db;Username=user;Password=asdf;Database=exampledb
+    networks:
+      - webnet
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: asdf
+      POSTGRES_DB: exampledb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - webnet
+
+  proxy:
+    image: caddy:2
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data/data:/data
+      - ./data/config:/config
+      - ./data/Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - web
+    networks:
+      - webnet
+
+volumes:
+  postgres_data:
+
+networks:
+  webnet:
